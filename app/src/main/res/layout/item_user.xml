@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         tools:text="1"
         android:layout_marginEnd="@dimen/common_padding_default"
+        android:textAppearance="?attr/textAppearanceCaption"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
@@ -34,9 +35,19 @@
         android:layout_height="wrap_content"
         tools:text="Nombre completo"
         android:layout_marginHorizontal="@dimen/common_padding_default"
+        android:textAppearance="?attr/textAppearanceSubtitle2"
         app:layout_constraintStart_toEndOf="@+id/imgPhoto"
         app:layout_constraintEnd_toStartOf="@+id/tvOrder"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <View
+
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/color_divider"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
