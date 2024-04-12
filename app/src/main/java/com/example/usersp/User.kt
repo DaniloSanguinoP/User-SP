@@ -7,4 +7,6 @@ data class User(
     var url: String
 ) {
 
+    fun getFullName(): String = "$name $lastName"
+
 }
